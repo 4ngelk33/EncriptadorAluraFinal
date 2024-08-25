@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+header.encabezado {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.contenedorPrincipal {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.areaEncriptar {
+    margin-bottom: 20px;
+}
+
+.texto1,
+#textoResultado {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #0A3871; 
+    border-radius: 5px;
+    resize: none;
+    font-family: 'Inter', sans-serif; 
+}
+
+#textoResultado {
+    display: none;
+    margin-bottom: 20px; 
+}
+
+.texto1::placeholder,
+#textoResultado::placeholder {
+    font-family: 'Inter', sans-serif; 
+}
+
+.terminos {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.terminos img {
+    margin-right: 10px;
+}
+
+.terminos p {
+    font-size: 14px;
+    color: #555;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.encriptarBoton,
+.desencriptarBoton {
+    flex: 1;
+    padding: 15px;
+    margin-right: 10px;
+    background-color: #0A3871; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Inter', sans-serif; 
+}
+
+.encriptarBoton:hover {
+    background-color: #0056b3;
+}
+
+.desencriptarBoton {
+    background-color: #495057; 
+}
+
+.desencriptarBoton:hover {
+    background-color: #373c43;
+}
+
+.copiarBoton {
+    padding: 15px;
+    background-color: #0A3871; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Inter', sans-serif; 
+}
+
+.copiarBoton:hover {
+    background-color: #0056b3;
+}
+
+.encriptado {
+    text-align: center;
+}
+
+.encriptado img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.mensajeEncriptado {
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .botones {
+        flex-direction: column;
+    }
+
+    .encriptarBoton,
+    .desencriptarBoton {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #textoResultado {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .terminos p {
+        font-size: 12px;
+    }
+
+    .encriptarBoton,
+    .desencriptarBoton {
+        padding: 10px;
+    }
+
+    #textoResultado {
+        font-size: 12px;
+    }
+}
